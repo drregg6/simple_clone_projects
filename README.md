@@ -13,13 +13,16 @@ Planned clones for project folder:
 Things to Improve
 -----------------
 
-1. CSS Organization
-2. Class names
-3. Bootstrap
-4. Readability
-5. Navigation effects
-6. Vertical alignment
-7. Flexbox(?)
-8. Layouts
+- CSS Organization
+- Class names
+- Bootstrap
+- Readability
+- Navigation effects
+- Vertical alignment
+- Flexbox(?)
+- Layouts
+
+Other Notes
+-----------
 
 The Resume Template will most likely be its own project, and should be replaced with another portion of a web application, perhaps a sidebar, contact page, or a blog body page
