@@ -34,6 +34,30 @@ div.container {
     background-size: cover;
 }
 
+.main-text {
+    padding: 25px 55px;
+}
+
+.main-text h1 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.19em;
+    margin: 28px 0 18px 0;
+}
+
+.main-text p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.main-text a.btn {
+    margin: 31px 0 18px 0;
+    padding: 13px 40px;
+    border-radius: 5px;
+    
+    font-size: 16px;
+}
+
 @media only screen and (min-width: 992px) {
     div.navbar-right {
         margin: 10px 0;
