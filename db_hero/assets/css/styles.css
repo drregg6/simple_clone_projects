@@ -16,22 +16,62 @@ nav,
     margin: 0;
     background-color: #fff;
     border-bottom: none;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 2px rgb(208,212,217);
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 400px;
+}
+
+.navbar-default .navbar-collapse {
+    padding: 20px 0;
+    overflow-x: hidden;
 }
 
 .navbar-default .navbar-brand,
 .navbar-brand {
     font-size: 1.85em;
     font-weight: bold;
-    color: blue;
+    color: #0071e0;
     text-shadow: .5px .5px 1px rgba(0,0,255,0.25);
     letter-spacing: -1px;
 }
 
+.navbar-default .navbar-collapse ul li {
+    text-align: left;
+}
+
+.navbar-default .navbar-collapse ul li {
+    margin: 15px;
+}
+.navbar-default .navbar-collapse ul li:first-child,
+.navbar-default .navbar-collapse ul {
+    margin-top: 0;
+}
+.navbar-default .navbar-collapse ul li:last-child {
+    margin-bottom: 5px;
+}
+
+.navbar-default .navbar-collapse button {
+    padding: 7px 100px;
+    background-color: #0070e0;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.navbar-default .navbar-collapse button:hover {
+    background-color: #0070ff;
+}
+
 div.container {
     padding: 80px 0;
+    width: 100%;
+    background: #e3eefc;
+/*
     background: url("../../images/background--db-vfl4SbjZf.jpg");
     background-size: cover;
+*/
 }
 
 .main-text {
@@ -56,10 +96,27 @@ div.container {
     border-radius: 5px;
     
     font-size: 16px;
+    
+    background-color: #0071e0;
+    border: none;
+}
+.main-text a.btn:hover {
+    background-color: rgba(0,113,224,0.75);
+}
+
+p.para-secondary {
+    font-weight: 500;
+}
+p.para-secondary a {
+    text-decoration: underline;
+    color: #0071e0;
+}
+p.para-secondary a:hover {
+    color: rgba(0,113,224,0.75);
 }
 
 @media only screen and (min-width: 992px) {
     div.navbar-right {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 }
