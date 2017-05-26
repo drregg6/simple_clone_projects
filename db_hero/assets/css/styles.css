@@ -1,3 +1,9 @@
+/* ---------------------------------------------
+
+Custom Styles
+
+----------------------------------------------*/
+
 body {
     font-family: 'Open Sans', Helvetica;
     text-align: center;
@@ -6,6 +12,12 @@ body {
 body.container-fluid {
     padding: 0;
 }
+
+/* ---------------------------------------------
+
+Navigation
+
+----------------------------------------------*/
 
 .navbar-header {
     padding: 15px 5px;
@@ -37,35 +49,44 @@ nav,
     letter-spacing: -1px;
 }
 
-.navbar-default .navbar-collapse ul li {
-    text-align: left;
+@media only screen and (max-width: 991px) {
+
+    .navbar-default .navbar-collapse ul li {
+        text-align: left;
+    }
+
+    .navbar-default .navbar-collapse ul li {
+        margin: 15px;
+    }
+    .navbar-default .navbar-collapse ul li:first-child,
+    .navbar-default .navbar-collapse ul {
+        margin-top: 0;
+    }
+    .navbar-default .navbar-collapse ul li:last-child {
+        margin-bottom: 5px;
+    }
+
+    .navbar-default .navbar-collapse button {
+        padding: 7px 100px;
+        background-color: #0070e0;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .navbar-default .navbar-collapse button:hover {
+        background-color: #0070ff;
+    }
 }
 
-.navbar-default .navbar-collapse ul li {
-    margin: 15px;
-}
-.navbar-default .navbar-collapse ul li:first-child,
-.navbar-default .navbar-collapse ul {
-    margin-top: 0;
-}
-.navbar-default .navbar-collapse ul li:last-child {
-    margin-bottom: 5px;
-}
+/* ---------------------------------------------
 
-.navbar-default .navbar-collapse button {
-    padding: 7px 100px;
-    background-color: #0070e0;
-    border: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 14px;
-}
-.navbar-default .navbar-collapse button:hover {
-    background-color: #0070ff;
-}
+Main
+
+----------------------------------------------*/
 
 div.container {
-    padding: 80px 0;
+    padding: 80px 0 20px 0;
     width: 100%;
     background: #e3eefc;
 /*
@@ -73,6 +94,12 @@ div.container {
     background-size: cover;
 */
 }
+
+/* ---------------------------------------------
+
+Main text
+
+----------------------------------------------*/
 
 .main-text {
     padding: 25px 55px;
@@ -116,7 +143,34 @@ p.para-secondary a:hover {
 }
 
 @media only screen and (min-width: 992px) {
-    div.navbar-right {
-        margin: 15px 0;
+    nav.navbar.navbar-fixed-top.navbar-default {
+        height: 80px;
+    }
+    
+    .navbar-default .navbar-collapse {
+        padding: 20px 0;
+    }
+    
+    .main-text {
+        padding: 50px;
+    }
+    
+    .main-text h1 {
+        font-size: 48px;
+    }
+    
+    .main-text p {
+        margin: 25px auto;
+        padding: 0 350px;
+        font-size: 20px;
+    }
+    
+    .main-text a.btn {
+        font-size: 20px;
+    }
+    
+    .main-text p.para-secondary {
+        font-size: 16px;
+        margin: 0 auto;
     }
 }
