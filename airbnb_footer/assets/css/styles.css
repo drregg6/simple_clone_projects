@@ -16,11 +16,13 @@ body > hr {
 
 .form-control {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: inherit;
     padding: 12px 8px;
     border-radius: 2px;
     height: auto;
+    color: inherit;
     
+    background: #fff;
     box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -32,7 +34,23 @@ form select.form-control:focus {
     box-shadow: none;
     -webkit-box-shadow: none;
 }
+form select.form-control:blur {
+    border-color: inherit;
+}
 
 .last-ele-margin {
     margin-bottom: 25px;
+}
+
+a,
+i {
+    color: rgba(0,0,0,0.5);
+    margin-right: 5px;
+    font-weight: bold;
+}
+a:hover,
+a:focus,
+i:hover,
+i:focus {
+    color: inherit;
 }
