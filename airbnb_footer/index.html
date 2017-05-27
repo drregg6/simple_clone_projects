@@ -4,6 +4,15 @@ TODO: font-family, font-weight, color needs updating
 TODO: update dropdown arrow in the form
 
 mobile -->
+<!-- desktop
+
+TODO: fix margins and paddings
+TODO: float copyright links and social media to left (js)
+TODO: innerWidth only works on (re)load, find out how to get Width on width change
+TODO: change <h5> styling
+TODO: change <form> css (margin: 10px auto)
+
+desktop -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,26 +36,58 @@ mobile -->
         
         <footer class="container">
             <div class="row">
-                <div class="col-xs-6">
-                    <form>
-                        <select name="language" class="form-control">
-                            <option value="english">English</option>
-                            <option value="espanol">Espanol</option>
-                            <option value="bahasa indeonesia">Bahasa Indonesia</option>
-                            <option value="bahasa melayu">Bahasa Melayu</option>
-                            <option value="catala">Catala</option>
-                            <option value="dansk">Dansk</option>
-                            <option value="deutsch">Deutsch</option>
-                        </select>
-                    </form>
+                <div class="form-container">
+                    <div class="col-xs-6 col-lg-10">
+                        <form>
+                            <select name="language" class="form-control">
+                                <option value="english">English</option>
+                                <option value="espanol">Espanol</option>
+                                <option value="bahasa indeonesia">Bahasa Indonesia</option>
+                                <option value="bahasa melayu">Bahasa Melayu</option>
+                                <option value="catala">Catala</option>
+                                <option value="dansk">Dansk</option>
+                                <option value="deutsch">Deutsch</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-xs-6 col-lg-10">
+                        <form>
+                            <select name="currency" class="form-control">
+                                <option value="usd">USD</option>
+
+                            </select>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-xs-6">
-                    <form>
-                        <select name="currency" class="form-control">
-                            <option value="usd">USD</option>
-                            
-                        </select>
-                    </form>
+                
+                <div class="col-lg-3 desktop-elements hide">
+                    <h5>AirBnB</h5>
+    
+                    <p><a href="#">About us</a><br>
+                    <a href="#">Careers</a><br>
+                    <a href="#">Press</a><br>
+                    <a href="#">Policies</a><br>
+                    <a href="#">Help</a><br>
+                    <a href="#">Diversity &amp; Belonging</a></p>
+                </div>
+                <div class="col-lg-3 desktop-elements hide">
+                    <h5>Discover</h5>
+    
+                    <p><a href="#">Trust &amp; Safety</a><br>
+                    <a href="#">Travel Credit</a><br>
+                    <a href="#">Gift Cards</a><br>
+                    <a href="#">Airbnb Citizen</a><br>
+                    <a href="#">Business Travel</a><br>
+                    <a href="#">Guidebooks</a><br>
+                    <a href="#">Airbnbmag</a></p>
+                </div>
+                <div class="col-lg-3 desktop-elements hide">
+                    <h5>Hosting</h5>
+    
+                    <p><a href="#">Why Host</a><br>
+                    <a href="#">Hospitality</a><br>
+                    <a href="#">Responsible Hosting</a><br>
+                    <a href="#">Community Center</a></p>
                 </div>
             </div>
             
@@ -59,5 +100,7 @@ mobile -->
                 </div>
             </div>
         </footer>
+        
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

@@ -138,7 +138,13 @@ p.para-secondary a:hover {
     color: rgba(0,113,224,0.75);
 }
 
-@media only screen and (min-width: 992px) {
+/* ---------------------------------------------
+
+Media queries
+
+----------------------------------------------*/
+
+@media only screen and (min-width: 992px) { /* desktop */
     nav.navbar.navbar-fixed-top.navbar-default {
         height: 80px;
     }
