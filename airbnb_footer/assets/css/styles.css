@@ -5,7 +5,7 @@ custom styles
 ------------------------------------------ */
 
 body {
-    font-family: Arial, Helvetica, Verdana, Times;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 15px;
     font-weight: 500;
     color: rgba(0,0,0,0.9);
@@ -13,7 +13,6 @@ body {
 
 hr {
     margin: 0;
-    background-color: rgba(0,0,0,0.9);
 }
 
 .content {
@@ -59,9 +58,23 @@ form
     -webkit-box-shadow: none;
 }
 
+form {
+    overflow: hidden;
+}
+
+form select.form-control {
+    /* default arrow removal */
+    appearance:         none;
+    -moz-appearance:    none;
+    -webkit-appearance: none;
+    
+    /* new arrow, located 90% -> from the center */
+    background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 90% center;
+}
+
 form select.form-control:focus {
     outline: 0 none;
-    border-color: aqua;
+    border-color: #008489;
     
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -100,8 +113,36 @@ media query
 ------------------------------------------ */
 
 @media only screen and (min-width: 992px) { /* desktop */
+    
+    .container {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    
+    .row:first-child {
+        margin: 50px -15px;
+    }
+    
     .desktop-elements {
         display: inline-block;
+    }
+    
+    form {
+        margin: 5px 0;
+    }
+    
+    h5 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .desktop-elements p a {
+        font-weight: 500;
+    }
+    
+    .desktop-elements {
+        margin-left: 5%;
+        width: 20%
     }
     
     .para-secondary {
