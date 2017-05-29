@@ -1,3 +1,11 @@
+<!--
+
+TODO: make <li> elements in line with <nav> border-bottom
+TODO: transition and animation effects
+TODO: open to more menu options on click
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,25 +29,47 @@
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">Personal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul class="hide">
-                                <li><a href="#">Getting Started<br><span>How to use PayPal</span></a></li>
-                                <li><a href="#">Check Out Securely Online<br><span>Use your credit cards or other funds</span></a></li>
-                                <li><a href="#">PayPal Credit<br><span>Get more time to pay</span></a></li>
-                                <li><a href="#">Mobile Wallet<br><span>Pay in stores with our app</span></a></li>
-                                <li><a href="#">eBay Payments<br><span>Speed through checkout on eBay</span></a></li>
-                                <li><a href="#">Shopping and More<br><span>Deals, gift cards and donations</span></a></li>
-                            </ul>
+                        <li id="personal">
+                            <a href="#personal">Personal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="hide">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <a href="#">Getting Started<br><span>How to use PayPal</span></a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="#">Check Out Securely Online<br><span>Use your credit cards or other funds</span></a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="#">PayPal Credit<br><span>Get more time to pay</span></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <a href="#">Mobile Wallet<br><span>Pay in stores with our app</span></a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="#">eBay Payments<br><span>Speed through checkout on eBay</span></a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="#">Shopping and More<br><span>Deals, gift cards and donations</span></a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li><a href="#">Business <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul class="hide">
-                                <li><a href="#">All Business Solutions<br><span>Merchant services, invoicing, and more</span></a></li>
-                                <li><a href="#">Get Paid in Person<br><span>Mobile card readers and POS Solutions</span></a></li>
-                                <li><a href="#">Get Paid on Your Website<br><span>Accept credit &amp; debit cards and PayPal</span></a></li>
-                                <li><a href="#">Borrow for Your Business<br><span>Affordable business loans</span></a></li>
-                                <li><a href="#">Add PayPal to Your Checkout<br><span>Access customers who prefer PayPal</span></a></li>
-                                <li><a href="#">Offer Credit to Your Customers<br><span>Promote financing to help increase sales</span></a></li>
-                            </ul>
+                        <li id="business">
+                            <a href="#business">Business <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="hide">
+                                <div class="row">
+                                    <div class="col-sm-4"><a href="#">All Business Solutions<br><span>Merchant services, invoicing, and more</span></a></div>
+                                    <div class="col-sm-4"><a href="#">Get Paid in Person<br><span>Mobile card readers and POS Solutions</span></a></div>
+                                    <div class="col-sm-4"><a href="#">Get Paid on Your Website<br><span>Accept credit &amp; debit cards and PayPal</span></a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4"><a href="#">Borrow for Your Business<br><span>Affordable business loans</span></a></div>
+                                    <div class="col-sm-4"><a href="#">Add PayPal to Your Checkout<br><span>Access customers who prefer PayPal</span></a></div>
+                                    <div class="col-sm-4"><a href="#">Offer Credit to Your Customers<br><span>Promote financing to help increase sales</span></a></div>
+                                </div>
+                            </div>
                         </li>
                         <li><a href="#">Send</a></li>
                         <li><a href="#">Request</a></li>
