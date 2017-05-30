@@ -3,7 +3,7 @@ body {
     min-width: 1028px;
 }
 
-.hide {
+.dropdown {
     display: none;
 }
 
@@ -30,30 +30,39 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.navigation ul {
+.nav ul {
     list-style-type: none;
+    position: relative;
     margin: 0;
     padding: 0;
 }
 
-.navigation ul li {
+.nav ul li {
     display: inline-block;
     margin: 0;
     padding: 0;
 }
+.nav ul li:hover div,
+.nav ul li:focus div,
+.nav ul li:active div {
+    display: block;
+    position: absolute;
+    top: 55px;
+    margin: 0 auto;
+}
 
-.navigation ul li a {
+.nav ul li a {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
 }
-.navigation ul li a:hover {
+.nav ul li a:hover {
     text-decoration: none;
 }
-.navigation ul li {
+.nav ul li {
     margin-right: 50px;
 }
-.navigation ul li:last-child {
+.nav ul li:last-child {
     margin-right: 0;
 }
 
