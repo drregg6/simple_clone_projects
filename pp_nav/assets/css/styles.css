@@ -5,15 +5,11 @@
 }
 
 body {
+    line-height: inherit;
     text-align: center;
     min-width: 1028px;
+    color: #fff;
 }
-
-/*
-.dropdown {
-    display: none;
-}
-*/
 
 header {
     width: 100%;
@@ -29,8 +25,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-container {
-    border-bottom: 1px solid rgba(255,255,255,0.75);
+    position: relative;
     width: 100%;
+    height: 72px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.nav-el {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-el {
+    float: left;
+    margin: 0 2.3%;
+    height: 100%;
+    position: relative;
+}
+.nav-el:first-child,
+.nav-el:last-child {
+    width: 18%;
+}
+.nav-el:nth-child(2) {
+    width: 50%;
+}
+
+.logo h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    
+    line-height: 72px;
+    transform: translateY(-50%);
+/*    padding-top: 20px;*/
+/*    height: 42px;*/
 }
 
 .nav ul,
@@ -40,18 +69,58 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.nav ul li {
+.nav ul li,
+.dropdown ul li {
+    display: inline-block;
     margin: 0;
     padding: 0;
 }
 
-.nav ul li:hover div,
-.nav ul li:focus div,
-.nav ul li:active div {
-    display: block;
-    position: absolute;
-    top: 55px;
-    margin: 0 auto;
+.nav ul {
+    height: 100%;
+}
+
+.nav ul li {
+    float: left;
+    height: 100%;
+    line-height: 72px;
+    width: 19%;
+    margin: 0 2.5%;
+    letter-spacing: 0.5px;
+}
+.nav ul li:hover {
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* down arrow */
+.li-pers:after,
+.li-busi:after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    position: relative;
+    top: -4px;
+    left: 6px;
+    border: 1px solid #fff;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    
+    transform: rotate(45deg);
+    transition: all 0.25s linear;
+}
+.li-selected:after { /* class added onclick js */
+    transform: rotate(-145deg);
+    top: 1px;
 }
 
 
@@ -68,8 +137,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
+/*
+.dropdown {
+    display: none;
+}
+*/
 
 /*
 .nav ul li a {
@@ -109,3 +181,14 @@ h2 {
 i {
     color: white;
 }*/
+
+/*
+.nav ul li:hover div,
+.nav ul li:focus div,
+.nav ul li:active div {
+    display: block;
+    position: absolute;
+    top: 55px;
+    margin: 0 auto;
+}
+*/
