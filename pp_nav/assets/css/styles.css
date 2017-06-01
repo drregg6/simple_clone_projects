@@ -33,9 +33,13 @@ nav layout
 
 .nav-container {
     position: relative;
+    
     width: 100%;
     height: 72px;
     border-bottom: 1px solid rgba(255,255,255,0.3);
+    
+    z-index: 1;
+    background: transparent;
 }
 
 .nav-el {
@@ -130,13 +134,21 @@ nav layout
 }
 
 .btn-default {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
+    letter-spacing: 0.5px;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 9px 21px;
+    border-color: #fff;
+}
+.btn-default:first-child {
+    background-color: transparent;
+    color: #fff;
 }
 
 .main-text {
+    display: none;
+    
     position: absolute;
     top: 50%;
     left: 45%;
@@ -178,10 +190,37 @@ dropdown layout
 
 ---------------------------------------------------------------------- */
 
-.dd-personal ul {
+.dd-personal,
+.dd-business {
+    width: 100%;
+    height: 240px;
+    
+    position: absolute;
+    top: 0;
+    
+    background-color: rgba(0,0,0,0.4);
+    background-color: #009cde;
+    background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+}
+
+.dd-list {
+    text-align: left;
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin-top: 90px;
+    margin-left: 8%;
+    width: 100%;
+}
+
+.dd-list li {
+/*    margin: 1.5% 10%;*/
+/*    width: 342px;*/
+    width: 31%;
+    height: 70px;
+    float: left;
+}
+.dd-list li:nth-child(4) {
+    clear: left;
 }
 
 /* ---------------------------------------------------------------------
@@ -190,10 +229,11 @@ dropdown styles
 
 ---------------------------------------------------------------------- */
 
-.dd-personal ul li a {
+.dd-list li a {
     color: #fff;
+    letter-spacing: 0.5px;
 }
 
-.dd-personal span {
+.dd-list span {
     font-size: 11px;
 }
