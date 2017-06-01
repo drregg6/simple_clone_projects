@@ -9,7 +9,6 @@ body {
     text-align: center;
     min-width: 1028px;
     color: #fff;
-    overflow-x: hidden;
 }
 
 header {
@@ -142,9 +141,17 @@ nav layout
     padding: 9px 21px;
     border-color: #fff;
 }
+.btn-default:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
 .btn-default:first-child {
     background-color: transparent;
     color: #fff;
+    margin-right: 2px;
+}
+.btn-default:first-child:hover {
+    background-color: transparent;
 }
 
 .main-text {
@@ -217,7 +224,7 @@ dropdown layout
 .dd-list li {
 /*    margin: 1.5% 10%;*/
 /*    width: 342px;*/
-    width: 31%;
+    width: 30%;
     height: 70px;
     float: left;
 }
@@ -237,6 +244,8 @@ dropdown styles
 }
 
 .dd-list span {
+    display: block;
+    margin-top: 4px;
     font-size: 11px;
 }
 /* css x */
