@@ -18,11 +18,18 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 550px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
+
+/* ---------------------------------------------------------------------
+
+nav layout
+
+---------------------------------------------------------------------- */
 
 .nav-container {
     position: relative;
@@ -33,11 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-el {
     display: inline-block;
-    margin: 0;
     padding: 0;
-}
-
-.nav-el {
+    
     float: left;
     margin: 0 2.3%;
     height: 100%;
@@ -93,14 +97,6 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
 /* down arrow */
 .li-pers:after,
 .li-busi:after {
@@ -123,72 +119,81 @@ h1, h2, h3, h4, h5, h6 {
     top: 1px;
 }
 
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+        
+    height: 100%;
+    line-height: 72px;
+    transform: translateY(-50%);
+}
 
+.btn-default {
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
 
+.main-text {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    
+    line-height: 550px;
+    transform: translateY(-50%);
+}
 
+/* ---------------------------------------------------------------------
 
+nav styles
 
+---------------------------------------------------------------------- */
 
+.logo h2 {
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+}
 
+.nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav ul li a:hover,
+.nav ul li a:focus,
+.nav ul li a:active {
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-/*
 .dropdown {
     display: none;
 }
-*/
 
-/*
-.nav ul li a {
+/* ---------------------------------------------------------------------
+
+dropdown layout
+
+---------------------------------------------------------------------- */
+
+.dd-personal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------
+
+dropdown styles
+
+---------------------------------------------------------------------- */
+
+.dd-personal ul li a {
     color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-*/
-/*
-.nav ul li a:hover {
-    text-decoration: none;
-}
-*/
-/*
-.nav ul li {
-    margin-right: 50px;
-}
-.nav ul li:last-child {
-    margin-right: 0;
-}
-*/
-
-
-
-/*
-h1 {
-    padding: 225px 0;
 }
 
-h2 {
-    color: #fff;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 26px;
+.dd-personal span {
+    font-size: 11px;
 }
-
-i {
-    color: white;
-}*/
-
-/*
-.nav ul li:hover div,
-.nav ul li:focus div,
-.nav ul li:active div {
-    display: block;
-    position: absolute;
-    top: 55px;
-    margin: 0 auto;
-}
-*/
