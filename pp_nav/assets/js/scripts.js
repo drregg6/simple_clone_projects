@@ -3,25 +3,22 @@ var menuItemPersonal = document.getElementById('personal');
 var menuItemBusiness = document.getElementById('business');
 var dropdownPersonal = document.querySelector('.dd-personal');
 var dropdownBusiness = document.querySelector('.dd-business');
+var closeElements = document.querySelectorAll('.dd-close');
 
 // add eventlisteners to elements
 // testers
-menuItemPersonal.addEventListener('click', function() {
-    console.log(this);
-    if (dropdownPersonal.classList.contains('dropdown')) {
-        dropdownPersonal.classList.remove('dropdown')
-    } else {
-        dropdownPersonal.classList.add('dropdown');
-    }
-});
-menuItemBusiness.addEventListener('click', function() {
-    console.log(this);
-    if (dropdownBusiness.classList.contains('dropdown')) {
-        dropdownBusiness.classList.remove('dropdown')
-    } else {
-        dropdownBusiness.classList.add('dropdown');
-    }
-});
+menuItemBusiness.addEventListener('click', business);
+menuItemPersonal.addEventListener('click', personal);
+closeElements.forEach(function(closeElement, i) {
+    closeElement.addEventListener('click', close);
+})
+
+//window.onclick = windowTest;
+//
+//if (!dropdownPersonal.classList.contains('dropdown') || !dropdownBusiness.classList.contains('dropdown')) {
+//    window.onclick = close;
+//}
+
 /*
 personal and business
 onclick
@@ -47,3 +44,42 @@ close dropdown
 
 
 // functions
+function close() {
+    menuItemPersonal.classList.remove('li-selected');
+    menuItemBusiness.classList.remove('li-selected');
+    dropdownBusiness.classList.add('dropdown');
+    dropdownPersonal.classList.add('dropdown');
+}
+
+function personal() {
+    if (!dropdownPersonal.classList.contains('dropdown')) {
+        close();
+    } else if (!dropdownBusiness.classList.contains('dropdown')) {
+        close();
+        menuItemPersonal.classList.add('li-selected');
+        dropdownPersonal.classList.remove('dropdown');
+    } else {
+        menuItemPersonal.classList.add('li-selected');
+        dropdownPersonal.classList.remove('dropdown');
+    }
+}
+
+function business() {
+    if (!dropdownBusiness.classList.contains('dropdown')) {
+        close();
+    } else if (!dropdownPersonal.classList.contains('dropdown')) {
+        close();
+        menuItemBusiness.classList.add('li-selected');
+        dropdownBusiness.classList.remove('dropdown');
+    } else {
+        menuItemBusiness.classList.add('li-selected');
+        dropdownBusiness.classList.remove('dropdown');
+    }
+}
+
+//function windowTest() {
+//    console.log("I work!")
+//    if (!dropdownPersonal.classList.contains('dropdown') || !dropdownBusiness.classList.contains('dropdown')) {
+//        close();
+//    }
+//}
