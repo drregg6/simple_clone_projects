@@ -190,6 +190,8 @@ nav styles
 
 .dropdown {
     display: none;
+    
+    transition: all 1s linear;
 }
 
 /* ---------------------------------------------------------------------
@@ -204,6 +206,7 @@ dropdown layout
     width: 100%;
     height: 240px;
     
+    display: none;
     position: absolute;
     top: 0;
     
