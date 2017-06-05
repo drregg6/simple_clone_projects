@@ -119,7 +119,7 @@ nav layout
     transition: all 0.25s linear;
 }
 .li-selected:after { /* class added onclick js */
-    transform: rotate(-137.5deg);
+    transform: rotate(-135deg);
     top: 1px;
 }
 

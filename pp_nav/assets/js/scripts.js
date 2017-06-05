@@ -1,13 +1,23 @@
 $(document).ready(function() {
     $('#business').on('click', function() {
-        $('.dd-business').slideToggle( "slow" );
+        $('#personal').removeClass( 'li-selected' );
+        $('.dd-personal').css( 'display', 'none' );
+        
+        $('#business').toggleClass( 'li-selected' );
+        $('.dd-business').slideToggle( 'normal' );
     });
     $('#personal').on('click', function() {
-        $('.dd-personal').slideToggle( "normal" );
+        $('#business').removeClass( 'li-selected' );
+        $('.dd-business').css( 'display', 'none' );
+        
+        $('#personal').toggleClass( 'li-selected' );
+        $('.dd-personal').slideToggle( 'normal' );
     });
     $('.dd-close').on('click', function() {
         console.log(this.parentElement);
-        $(this).parent().slideUp( "normal" );
+        $('#business').removeClass( 'li-selected' );
+        $('#personal').removeClass( 'li-selected' );
+        $(this).parent().slideUp( 'normal' );
     });
 })
 
