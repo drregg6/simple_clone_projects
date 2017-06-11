@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
+/* ------------------------------------------------------
 
+custom styles
+
+------------------------------------------------------ */
 
 .container {
     font-family: 'Open sans', sans-serif, Helvetica;
@@ -33,6 +37,11 @@ a:hover {
     text-decoration: none;
 }
 
+/* ------------------------------------------------------
+
+headers
+
+------------------------------------------------------ */
 
 
 h1 {
@@ -44,6 +53,11 @@ h2 {
     font-weight: 600;
 }
 
+/* ------------------------------------------------------
+
+images
+
+------------------------------------------------------ */
 
 
 h1 img {
@@ -52,10 +66,59 @@ h1 img {
     margin-right: 5px;
 }
 
+/* ------------------------------------------------------
+
+custom classes
+
+------------------------------------------------------ */
 
 
 .para-secondary {
     color: #24b47e;
     font-size: 22px;
     margin-top: 25px;
+}
+
+/* ------------------------------------------------------
+
+media queries
+
+------------------------------------------------------ */
+
+@media only screen and (min-width: 768px) { /* tablets */
+    
+    .container {
+        margin: 0;
+        padding: 50px 15px;
+    }
+    
+    .col-sm-9 {
+        padding-right: 20px;
+    }
+    
+    p {
+        border-right: 1px solid rgba(0,0,0,.05);
+    }
+    
+    .para-secondary,
+    div.row:first-child p {
+        border-right: none;
+    }
+    
+    .div-para-secondary {
+        padding-top: 37px;
+        margin: 0;
+        display: flex;
+        
+        justify-content: left;
+    }
+}
+
+@media only screen and (min-width: 992px) { /* desktop */
+    
+    .container {
+        margin: 0;
+        padding: 50px;
+    }
+    
 }
