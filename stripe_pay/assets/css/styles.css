@@ -117,8 +117,26 @@ media queries
 @media only screen and (min-width: 992px) { /* desktop */
     
     .container {
-        margin: 0;
+        margin: 0 auto;
         padding: 50px;
+    }
+    
+    .para-secondary {
+        margin-top: 0;
+    }
+    .div-para-secondary {
+        
+    }
+    
+    .dtop-img {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .dtop-flex {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
     }
     
 }
