@@ -131,12 +131,40 @@ media queries
     .dtop-img {
         display: flex;
         justify-content: flex-end;
+/*
+        text-align: center;
+        white-space: nowrap;
+*/
+    }
+/*
+    .dtop-img:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+*/
+    .dtop-img img {
+/*
+        display: flex;
+        align-items: center;
+*/
+/*
+        display: inline-block;
+        vertical-align: middle;
+*/
     }
     
     .dtop-flex {
         display: flex;
         justify-content: center;
         align-items: baseline;
+    }
+    
+    .content-row {
+        display: flex;
+        align-items: center;
     }
     
 }
